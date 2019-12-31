@@ -1,0 +1,18 @@
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+}
+
+h1 {
+    font-size: 100px;
+}
