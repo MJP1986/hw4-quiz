@@ -30,15 +30,28 @@
             </div>
             <p id="comment"></p>
         </div>
-        <form class="form-inline enterName">
-            <div class="form-group mb-2">
-              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="High Score:">
-            </div>
-            <div class="form-group mx-sm-3 mb-2">
-              <input type="password" class="form-control" id="inputPassword2" placeholder="Enter Name">
-            </div>
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-          </form>
+
+        <!-- <div id="enterName">
+            <form id="todo-form" method="POST">
+              <label for="todo-text">Add a Todo:</label>
+              <input type="text" placeholder="What needs to be done?" name="todo-text" id="todo-text" />
+            </form>
+            <p>Todo Count: <span id="todo-count">0</span></p>
+            <ul id="todo-list"></ul>
+          </div> -->
+        <div id="enterName">
+            <form class="form-inline enterName">
+                <div class="form-group mb-2">
+                    <p id="highScore"></p>
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input class="form-control" id="inputPassword2" placeholder="Enter Name">
+                </div>
+                <button id="resetScore" type="resetscore" class="btn btn-primary mb-2">Reset Score</button>
+
+                <button id="playAgain" type="playagain" class="btn btn-primary mb-2">Play Again</button>
+            </form>
+        </div>
 
     </div>
 
