@@ -13,7 +13,7 @@ var nameEl = document.getElementById("enterName")
 var buttons = document.querySelector("#choices");
 var score = 0;
 var questionCounter = 0;
-time = 60;
+time = 5;
 
 document.getElementById("start").onclick = function () {
   document.getElementById("home").style.display = "none";
@@ -61,10 +61,12 @@ function renderQuestion() {
 };
 
 function gameOver() {
-
-  result.innerHTML = "";
-  nameEl.style.display = "block";
   highScoreEl.innerText = "Your Score is: " + time;
+  result.innerHTML = "";
+  buttons.style.display = "none";
+  question.style.display = "none";
+  nameEl.style.display = "block";
+
 
 
 
