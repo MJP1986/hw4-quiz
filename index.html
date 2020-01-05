@@ -14,7 +14,7 @@
 
 <body>
     <div id="timer">Timer</div>
-    <a class="btn btn-warning" role="button">High Score</a>
+    <a  id="scoreListbutton" class="btn btn-warning" role="button">High Score</a>
     <div class="container">
         <div id="home" class="flex-center flex-column">
             <h1>Start Quiz</h1>
@@ -45,11 +45,13 @@
                     <p id="highScore"></p>
                 </div>
                 <div class="form-group mx-sm-3 mb-2">
-                    <input class="form-control" placeholder="Enter Name">
+                    <input id="userName" class="form-control" placeholder="Enter Name">
                 </div>
                 <button id="resetScore" type="resetscore" class="btn btn-primary mb-2">Reset Score</button>
 
                 <button id="playAgain" type="playagain" class="btn btn-primary mb-2">Play Again</button>
+                <p id="scoreList">High Score List: </p>
+                <ul id="nameList"></ul>
             </form>
         </div>
 

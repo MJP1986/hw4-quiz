@@ -9,8 +9,12 @@ var choiceB = document.getElementById("B");
 var choiceC = document.getElementById("C");
 var choiceD = document.getElementById("D");
 var result = document.getElementById("comment");
-var nameEl = document.getElementById("enterName")
+var userForm = document.getElementById("enterName")
+var userName = document.getElementById("userName");
+var scoreList = document.getElementById("scoreList")
+var nameList = document.getElementById("nameList")
 var buttons = document.querySelector("#choices");
+
 var score = 0;
 var questionCounter = 0;
 time = 5;
@@ -56,8 +60,6 @@ function renderQuestion() {
   question.appendChild(pl);
   questionCounter++
   console.log(questionCounter)
-
-
 };
 
 function gameOver() {
@@ -65,13 +67,14 @@ function gameOver() {
   result.innerHTML = "";
   buttons.style.display = "none";
   question.style.display = "none";
-  nameEl.style.display = "block";
-
-
-
-
+  userForm.style.display = "block";
 }
 
+scoreNames();
+
+function scoreNames() {
+
+}
 // function checkAnswers() {
 //   if (Element.ma === ) {
 //     result.innerHTML = "correct"
