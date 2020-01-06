@@ -17,7 +17,7 @@ var buttons = document.querySelector("#choices");
 
 var score = 0;
 var questionCounter = 0;
-time = 5;
+time = 40;
 
 document.getElementById("start").onclick = function () {
   document.getElementById("home").style.display = "none";
@@ -73,6 +73,7 @@ function gameOver() {
 scoreNames();
 
 function scoreNames() {
+  nameList.innerHTML = "";
 
 }
 // function checkAnswers() {
